@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_153" data-name="Ellipse 153" cx="29" cy="29" r="29" transform="translate(692 8755)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.19" y1="0.186" x2="0.832" y2="0.847" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f63f75"/>
+      <stop offset="1" stop-color="#3e537e"/>
+    </linearGradient>
+  </defs>
+  <g id="WA" transform="translate(-480 -8758)">
+    <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(-212 3)" clip-path="url(#clip-path)">
+      <g id="whatsapp_1_" data-name="whatsapp (1)" transform="translate(690 8753)">
+        <rect id="Rectangle_120" data-name="Rectangle 120" width="60.652" height="60.652" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+        <g id="Group_25" data-name="Group 25" transform="translate(11.712 9.093)">
+          <path id="Path_537" data-name="Path 537" d="M68.494,110.788l2.971-10.552a21.174,21.174,0,1,1,7.911,7.751Zm11.438-6.655.648.4a17.585,17.585,0,1,0-5.661-5.534l.437.68-1.711,6.077Z" transform="translate(-68.494 -68.321)" fill="#fff"/>
+          <path id="Path_538" data-name="Path 538" d="M152.357,152.9l-1.375-.075a1.662,1.662,0,0,0-1.182.4,6.262,6.262,0,0,0-2.059,3.155c-.488,2.174.266,4.835,2.218,7.5a22.3,22.3,0,0,0,12.022,8.739,5.858,5.858,0,0,0,4.962-.614,4.437,4.437,0,0,0,1.931-2.817l.219-1.025a.712.712,0,0,0-.4-.8l-4.645-2.141a.712.712,0,0,0-.862.212l-1.824,2.364a.522.522,0,0,1-.587.175,14.282,14.282,0,0,1-7.728-6.613.527.527,0,0,1,.066-.588l1.743-2.016a.712.712,0,0,0,.116-.746l-2-4.685A.712.712,0,0,0,152.357,152.9Z" transform="translate(-137.07 -141.579)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
