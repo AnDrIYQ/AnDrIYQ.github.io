@@ -1,0 +1,253 @@
+/* VARIABLES */
+:root {
+    --gray: #EFEFEF;
+    --main: #F13C6E;
+}
+
+/* FONTS */
+@font-face {
+    font-family: RM;
+    src: url('../fonts/RM.woff');
+}
+/* FONTS */
+
+
+/* COMMON */
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html::-webkit-scrollbar {
+    width: 13px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #444;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+}
+
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1180px;
+    width: 80%;
+    display: flex;
+}
+
+.container-small {
+    width: 54%;
+}
+
+.pink-border {
+    border: 2px solid var(--main);
+}
+
+.bg-main {
+    background-color: var(--main);
+}
+
+.font-theme {
+    font-family: RM;
+}
+
+.ben-item {
+    width: 60px;
+}
+/* COMMON */
+
+/* COMPONENTS */
+header {
+    padding: 1.8em 0;
+    border-bottom: 1px solid var(--gray);
+}
+
+.logo > img {
+    width: 258px;
+    height: 48px;
+}
+
+.header-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--gray);
+    color: gray;
+    font-size: .9rem;
+    width: 100%;
+}
+
+.send-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--gray);
+}
+
+.info-head {
+    color: white;
+}
+
+.info-list > li {
+    color: white;
+    margin: 10px 0;
+    /* text-transform: uppercase; */
+    font-size: .9rem;
+}
+
+.hover\:main {
+    color: black;
+    background-color: #fff;
+}
+
+.hover\:main:hover {
+    color: white;
+    background-color: var(--main);
+}
+
+nav > a {
+    padding: 15px 0;
+    transition: all .3s;
+    background-position: center;
+}
+
+nav > a:hover {
+    transition: all .25ms;
+    color: white;
+    background-position: bottom;
+    background-color: var(--main);
+}
+
+#to-top {
+    background-size: 50%;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+    background-image: url('../img/arrow.svg');
+}
+
+#notification {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s;
+}
+
+.main-screen {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(45deg, var(--main), purple);
+}
+
+h1 {
+    font-family: RM;
+}
+
+
+
+footer {
+    padding: 1.8em 0;
+    border-top: 1px solid var(--gray);
+    margin-top: 1.8em;
+}
+.sub-footer {
+    background-color: var(--gray);
+}
+/* COMPONENTS */
+
+
+/* MEDIA */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-header {
+        display: none !important;
+    }
+    .mobile-header {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-header {
+        display: none !important;
+    }
+    .desktop-header {
+        display: flex !important;
+    }
+}
+/* MEDIA */
